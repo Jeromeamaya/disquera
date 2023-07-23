@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{%block title%} Genero  {%endblock%}
+
+{%block Contenido%} 
+
+    <h1 class="text-center ">Genero</h1>
+    <div class="mb-2">
+    <a href={% url 'genero-add' %} class=" btn btn-primary "><i class=" bi bi-plus-circle">  
+    </i> Registrar Disquera</a>
+</div>
+    <div class="table-resposive">
+        <table class="table align-middle">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>ID</th>
+                    <th>Foto</th>
+                    <th>Nombre <br> Artistico</th>
+                    <th>Apellido</th>
+                    <th>Disquera</th>
+                    <th>Estado</th>
+                    <th>Estaciones</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <td>ID</td>
+                <td>Foto</td>
+                <td>Nombre <br> Artistico</td>
+                <td>Apellido</td>
+                <td>Disquera</td>
+                <td>Cancion</td>
+                <td>Estaciones</td>
+                <td>
+                    <a href={% url 'genero-edit' %} class="btn btn-warning"> <i class="bi bi-pencil"> </i> Editar</a>
+                    <a href="#" class="btn btn-danger"> <i class="bi bi-trash" </i> Eliminar</a>
+                </td>
+            </tbody>
+        </table>
+    </div>
+{%endblock%}
